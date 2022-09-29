@@ -261,11 +261,11 @@ main  {
   margin: 1px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     
     img{
-    width: 33%;
-    height: 33%;
+    width: 50%;
+    height: 50%;
 }
     
     
@@ -281,4 +281,28 @@ main  {
   padding: 10px;
   font-size: 16px;
   text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+}
+@keyframes move {
+ 0% {
+    transform: translate(-30%, 0);
+ }
+ 50% {
+    text-shadow:  0 25px 50px rgba(0, 0, 0, 0.75);
+ }
+ 100%  {
+    -o-transform: translate(30%, 0);
+ }    
+}
+
+@media (max-width: 768px) {
+    
+    .container, .menu{
+    width: 50%;
+    height: 50%;
 }
